@@ -32,7 +32,7 @@ An end-to-end data analysis of raw material consumption and cost for a metal-pro
 2. **Data quality checks:** no missing values, duplicates, or negative quantities; totals reconcile.
 3. **Aggregation:** Excel PivotTables / `SUMIFS` and pandas `groupby` by material and month, with results cross-checked between the two.
 4. **Visualization:** bar and line charts in Excel and Python.
-5. **Recommendations:** summarized in a written report (`docs/SOP_document.docx`).
+5. **Recommendations:** summarized in a written report ([PDF](docs/SOP_document.pdf)).
 
 ## Dataset columns
 | Column | Description |
@@ -58,5 +58,5 @@ pip install -r requirements.txt
 jupyter notebook notebooks/swati_industries_analysis.ipynb
 ```
 
-## Limitations
-The data is simulated, covers one year, and has no supplier or product-level detail, so the findings are illustrative. With real data, the next steps would be validating the seasonal pattern across multiple years and testing price-per-kg trends.
+## Next steps
+This analysis uses a simulated dataset, which let me demonstrate the full workflow (cleaning, aggregation, visualization, recommendations) without sharing company data. With real records, I would validate the seasonal pattern across multiple years, add supplier-level detail, and test whether price per kg trends upward over time.
